@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aprendendo Dom</title>
+    <style>
+        body {
+        background: darkblue;
+        color: white;
+        font: normal 20pt Arial;
+    }
+    </style>
+</head>
+<body>
+    <h1>Estudos Dom </h1>
+    <p> Here is the result</p>
+    <p> Learning how to use the <strong>DOM</strong> in JS </p>
+    <div id="msg"> 
+       click here
+    </div>
+    <Script>
+        /*
+     let p1 = window.document.getElementsByTagName('p')[0]; 
+     p1.innerText = 'Esta escrito assim: ' + p1.innerText;
+
+     let d = window.document.querySelector('#msg');
+     d.style.color = 'red'
+
+     const body = document.body;
+     body.style.background = 'Black';
+        */
+
+        let b = window.document.querySelectorAll('body p')[1]; /* usado para mais listas, ex: p1 */
+        b.textContent = 'Eai'
+        b.style.background = 'red'
+        b.style.color = 'Black'
+
+        const body = document.body;
+
+    </Script>    
+</body>
+</html>  
