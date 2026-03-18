@@ -1,12 +1,10 @@
 
 function carregar(){
-    const txt1 = window.document.querySelector('#texto1')
     const txt2 = window.document.querySelector('#texto2')
     const txt3 = window.document.querySelector('#texto3')
     const idadeinput = window.document.querySelector('#idadeinput')
     const idade = Number(idadeinput.value)
     let tipo =''
-    txt1.textContent='Selecione sua idade:'+ idade
     txt2.textContent= 'Eai'
     
     
@@ -27,6 +25,6 @@ function carregar(){
         tipo ='idoso'
         
     }
-    txt2nnerHTML= `Você é ${tipo} e tem ${idade} anos `
+    txt2.innerHTML=`Você é ${tipo} e tem ${idade} anos `
 }
     
