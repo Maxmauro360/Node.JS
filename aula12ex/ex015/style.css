@@ -1,6 +1,8 @@
 body {
  background-color: rgb(89, 138, 138);
  font: normal 15pt Arial;
+} input {
+    text-align: flex;
 }
 header {
 color: white;
