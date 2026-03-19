@@ -5,16 +5,17 @@ function carregar(){
     const idadeinput = window.document.querySelector('#idadeinput')
     const idade = Number(idadeinput.value)
     let tipo =''
-    txt2.textContent= 'Eai'
     
     
+    
+    txt3.innerHTML= '<strong>Funcionou</strong>'
     
     if(idade<=4 ){
         tipo= 'nenem'
         
     } else if (idade <=12 ){
         tipo = 'criança'
-               
+        
     } else if (idade<=17){
         tipo = 'adolescente'
         
