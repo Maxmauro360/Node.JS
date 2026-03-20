@@ -1,0 +1,18 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center; /*coloca todos os itens no centro*/
+    background-color: aliceblue;
+    flex-direction: column; /*coloca um emcima do outro*/
+    
+} #header{
+    margin-top: 40px; /* desce a margem*/
+}#seção{
+    background-color: antiquewhite;
+    padding: 40px;
+    margin: 20px;
+    height: 270px;
+    width: 200px;
+    border-radius: 20px;
+}
+    
