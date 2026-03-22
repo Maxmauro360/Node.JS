@@ -6,7 +6,7 @@ function carregar(){
     const txt4 = window.document.querySelector("#texto4")
     const sec = window.document.querySelector("#seção")
     
-    head.textContent='penetrar'
+    head.textContent='Seja bem vindo!';
     txt.textContent = 'Faça seu cadastro:';
     txt2.textContent = 'Login';
     /*txt3.textContent = 'texto3';
@@ -30,19 +30,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     alert("cadastro realizado com sucesso!");
     
-
+}
     function Logar(){
-            let user = window.document.querySelector("#login");
-            let pass = window.document.querySelector("#senha");
+            let user = window.document.querySelector("#login").value;
+            let pass = window.document.querySelector("#senha").value;
 
-            let usuariosalvo = window.document.querySelector("usuario");
-            let senhasalva = window.document.querySelector("senha");
+            let usuariosalvo = localStorage.getItem("usuario");
+            let senhasalva = localStorage.getItem("senha");
 
             if(user === usuariosalvo && pass=== senhasalva){
-                document.querySelector("texto3") = "Login realizado com sucesso!";
+                document.querySelector("#texto3").textContent = "Login realizado com sucesso!";
             } else {
-                window.document.querySelector("#texto3") = "Usuário ou senha incorretos!";
+                window.document.querySelector("#texto3").textContent = "Usuário ou senha incorretos!";
             }
         }
 
-    }
+              

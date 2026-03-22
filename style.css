@@ -2,11 +2,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center; /*coloca todos os itens no centro*/
-    background-color: aliceblue;
+    background-color: rgb(42, 98, 148);
     flex-direction: column; /*coloca um emcima do outro*/
     
 } #header{
     margin-top: 40px; /* desce a margem*/
+    font: normal 20pt arial;
 }#seção{
     background-color: antiquewhite;
     padding: 40px;
