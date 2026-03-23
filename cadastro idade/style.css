@@ -11,12 +11,15 @@ header {
   
 } section {
     display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
     margin: auto;
     text-align: left;
-    padding: 40pt;
+    padding: 25pt;
     width: 500px;
     background-color:whitesmoke;
     border-radius: 20px;
+} label{
+    padding: 10pt;
+} #resultado{
+    margin-top: 30pt ;
+       
 }
