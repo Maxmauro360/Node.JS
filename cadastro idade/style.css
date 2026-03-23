@@ -1,22 +1,22 @@
 body {
+    font: normal 15pt arial;
     background-color: black;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
 
 }
 header {
     text-align: center;
     font: normal 20pt arial;
-    color: aliceblue;
-} div {
-    justify-content: center;
-    text-align: center;
-    color: black;
+    color: white;
+    margin-bottom: 30pt;
+  
+} section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin: auto;
+    text-align: left;
     padding: 40pt;
-    height: 100px;
-    width: 100px;
+    width: 500px;
     background-color:whitesmoke;
     border-radius: 20px;
 }
