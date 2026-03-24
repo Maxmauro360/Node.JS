@@ -14,15 +14,15 @@ function check(){
         suposiçao.textContent="Palpites anteriores:";
     }
 
-    suposiçao.textContent += `${palpite_usuario}`;
+    suposiçao.textContent += `${palpite_usuario},`;
      if(palpite_usuario ===randomnumber){
         ultimoR.textContent = "Você acertou!";
         ultimoR.style.backgroundColor = "green";
-        dica.textContent= " ";
+        dica.textContent= "";
         setGameOver();
-     }else if(palpite_usuario === 10) {
+     }else if(contador_suposiçao === 10) {
         ultimoR.textContent= "GAME OVER!";
-        dica.textContent=" ";
+        dica.textContent="";
         setGameOver()
      } else {
         ultimoR.textContent = "Errado!";
@@ -35,17 +35,14 @@ function check(){
             dica.textContent ="Seu palpite foi muito alto...";
         }
         contador_suposiçao = contador_suposiçao + 1;
-        numero.value = " " /* limpa o campo */
+        numero.value = "" /* limpa o campo */
         numero.focus()     /*coloca o cursor de volta */
-
      }
-
 }
-
 botao.addEventListener('click', check )
 
 function setGameOver(){
     numero.disabled = true;
     botao.disabled = true;
-    ultimoR.textContent = "Clique f5par jogar de novo!";
 }
+ultimoR.textContent = "Clique F5 para jogar de novo!";
