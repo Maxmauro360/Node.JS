@@ -1,6 +1,6 @@
 function corpo(){    
     
-    const header = window.document.querySelector("#cabeça");
+    const header = window.document.querySelector("#cabeça");    
     const txt = window.document.querySelector("#texto");
     const txt1 = window.document.querySelector("#texto1");
     const inp = window.document.querySelector("#textoano");
