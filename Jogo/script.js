@@ -1,4 +1,5 @@
-let randomnumber = Math.floor(Math.random()*100 + 1)
+let randomnumber = Math.floor(Math.random()*100 + 1) /* arredonda pra baixo --> gera um numero aleatorio entre 0 e 1 --> multipica por 100
+--> adiciona mais 1 */
 
 const numero =  window.document.querySelector("#numero");
 const botao =  window.document.querySelector("#botao");
@@ -15,7 +16,7 @@ function check(){
     }
 
     suposiçao.textContent += `${palpite_usuario},`;
-     if(palpite_usuario ===randomnumber){
+     if(palpite_usuario ===randomnumber){ /*compara o numero que digitei de forma estrita com o numero aleatorio gerado */
         ultimoR.textContent = "Você acertou!";
         ultimoR.style.backgroundColor = "green";
         dica.textContent= "";
